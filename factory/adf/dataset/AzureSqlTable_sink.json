@@ -1,0 +1,249 @@
+{
+	"name": "AzureSqlTable_sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sqldb_ls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "usedCarSkuId",
+				"type": "varchar"
+			},
+			{
+				"name": "location",
+				"type": "varchar"
+			},
+			{
+				"name": "manufacturing_year",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Body_Type",
+				"type": "varchar"
+			},
+			{
+				"name": "transmission_type",
+				"type": "varchar"
+			},
+			{
+				"name": "fuel_type",
+				"type": "varchar"
+			},
+			{
+				"name": "total_km_driven",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "images",
+				"type": "varchar"
+			},
+			{
+				"name": "imgCount",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "threesixty",
+				"type": "bit"
+			},
+			{
+				"name": "dvn",
+				"type": "varchar"
+			},
+			{
+				"name": "manufacturer_of_car",
+				"type": "varchar"
+			},
+			{
+				"name": "model",
+				"type": "varchar"
+			},
+			{
+				"name": "variantName",
+				"type": "varchar"
+			},
+			{
+				"name": "City",
+				"type": "varchar"
+			},
+			{
+				"name": "price",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "type_of_seller",
+				"type": "varchar"
+			},
+			{
+				"name": "carType",
+				"type": "varchar"
+			},
+			{
+				"name": "top_features",
+				"type": "varchar"
+			},
+			{
+				"name": "comfort_features",
+				"type": "varchar"
+			},
+			{
+				"name": "interior_features",
+				"type": "varchar"
+			},
+			{
+				"name": "exterior_features",
+				"type": "varchar"
+			},
+			{
+				"name": "safety_features",
+				"type": "varchar"
+			},
+			{
+				"name": "Color",
+				"type": "varchar"
+			},
+			{
+				"name": "Engine_Type",
+				"type": "varchar"
+			},
+			{
+				"name": "Displacement",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "No_of_Cylinder",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "Valves_per_Cylinder",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "Valve_Configuration",
+				"type": "varchar"
+			},
+			{
+				"name": "Turbo_Charger",
+				"type": "bit"
+			},
+			{
+				"name": "Super_Charger",
+				"type": "bit"
+			},
+			{
+				"name": "Length",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "Width",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "Height",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "Wheel_Base",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "Kerb_Weight",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "Gross_Weight",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "Gear_Box",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Drive_Type",
+				"type": "varchar"
+			},
+			{
+				"name": "Seating_Capacity",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Steering_Type",
+				"type": "varchar"
+			},
+			{
+				"name": "Front_Brake_Type",
+				"type": "varchar"
+			},
+			{
+				"name": "Rear_Brake_Type",
+				"type": "varchar"
+			},
+			{
+				"name": "Tyre_Type",
+				"type": "varchar"
+			},
+			{
+				"name": "No_of_Doors",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "Cargo_Volume",
+				"type": "varchar"
+			},
+			{
+				"name": "state",
+				"type": "varchar"
+			},
+			{
+				"name": "exterior_color",
+				"type": "varchar"
+			},
+			{
+				"name": "owner_type",
+				"type": "varchar"
+			},
+			{
+				"name": "Fuel_Suppy_System",
+				"type": "varchar"
+			},
+			{
+				"name": "Max_Power",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Max_Torque",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "car_age",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "cardekho_whole"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

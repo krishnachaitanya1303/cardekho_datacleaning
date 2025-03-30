@@ -1,0 +1,238 @@
+{
+	"name": "cardekho_cleaned_ds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "cardekho_adls_sink",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "car_age_added_csv/part-00000-tid-6419373858616330266-4a4ff4e5-8a06-4cf7-ab6d-6461ae6bf2da-562-1-c000.csv",
+				"folderPath": "cardekho_silver_layer",
+				"fileSystem": "cardekho-raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "7111bf25-97af-47f9-867b-40879190d800",
+				"type": "String"
+			},
+			{
+				"name": "gomti nagar",
+				"type": "String"
+			},
+			{
+				"name": "2016",
+				"type": "String"
+			},
+			{
+				"name": "Hatchback",
+				"type": "String"
+			},
+			{
+				"name": "manual",
+				"type": "String"
+			},
+			{
+				"name": "cng",
+				"type": "String"
+			},
+			{
+				"name": "69162",
+				"type": "String"
+			},
+			{
+				"name": "[{'img': 'https://images10.gaadi.com/usedcar_image/original/usedcar_0_734841676968137_1676968151.jpeg?imwidth=640'}]",
+				"type": "String"
+			},
+			{
+				"name": "15",
+				"type": "String"
+			},
+			{
+				"name": "false9",
+				"type": "String"
+			},
+			{
+				"name": "Maruti Wagon R LXI CNG",
+				"type": "String"
+			},
+			{
+				"name": "Maruti",
+				"type": "String"
+			},
+			{
+				"name": "Maruti Wagon R",
+				"type": "String"
+			},
+			{
+				"name": "LXI CNG",
+				"type": "String"
+			},
+			{
+				"name": "Lucknow",
+				"type": "String"
+			},
+			{
+				"name": "370000",
+				"type": "String"
+			},
+			{
+				"name": "Dealer",
+				"type": "String"
+			},
+			{
+				"name": "corporate",
+				"type": "String"
+			},
+			{
+				"name": "['Power Steering', 'Power Windows Front', 'Air Conditioner', 'Heater', 'Adjustable Head Lights', 'Manually Adjustable Exterior Rear View Mirror', 'Centeral Locking', 'Child Safety Locks', 'Number Of Speaker']",
+				"type": "String"
+			},
+			{
+				"name": "['Power Steering', 'Power Windows Front', 'Remote Trunk Opener', 'Remote Fuel Lid Opener', 'Low Fuel Warning Light', 'Accessory Power Outlet', 'Rear Seat Headrest', 'Cup Holders Front']",
+				"type": "String"
+			},
+			{
+				"name": "['Air Conditioner', 'Heater', 'Digital Odometer', 'Electronic Multi Tripmeter', 'Fabric Upholstery', 'Glove Compartment', 'Dual Tone Dashboard']",
+				"type": "String"
+			},
+			{
+				"name": "['Adjustable Head Lights', 'Manually Adjustable Exterior Rear View Mirror', 'Power Antenna', 'Chrome Grille', 'Chrome Garnish', 'Roof Rail']",
+				"type": "String"
+			},
+			{
+				"name": "['Centeral Locking', 'Child Safety Locks', 'Day Night Rear View Mirror', 'Passenger Side Rear View Mirror', 'Halogen Headlamps', 'Rear Seat Belts', 'Seat Belt Warning', 'Side Impact Beams', 'Front Impact Beams', 'Adjustable Seats', 'Centrally Mounted Fuel Tank', 'Engine Immobilizer', 'Engine Check Warning', 'Anti Theft Device']",
+				"type": "String"
+			},
+			{
+				"name": "Silver23",
+				"type": "String"
+			},
+			{
+				"name": "K10B Engine",
+				"type": "String"
+			},
+			{
+				"name": "998.0",
+				"type": "String"
+			},
+			{
+				"name": "3.0",
+				"type": "String"
+			},
+			{
+				"name": "4.0",
+				"type": "String"
+			},
+			{
+				"name": "DOHC",
+				"type": "String"
+			},
+			{
+				"name": "false29",
+				"type": "String"
+			},
+			{
+				"name": "false30",
+				"type": "String"
+			},
+			{
+				"name": "Prop_31",
+				"type": "String"
+			},
+			{
+				"name": "Prop_32",
+				"type": "String"
+			},
+			{
+				"name": "Prop_33",
+				"type": "String"
+			},
+			{
+				"name": "Prop_34",
+				"type": "String"
+			},
+			{
+				"name": "Prop_35",
+				"type": "String"
+			},
+			{
+				"name": "Prop_36",
+				"type": "String"
+			},
+			{
+				"name": "537",
+				"type": "String"
+			},
+			{
+				"name": "FWD",
+				"type": "String"
+			},
+			{
+				"name": "539",
+				"type": "String"
+			},
+			{
+				"name": "Power",
+				"type": "String"
+			},
+			{
+				"name": "Ventilated Disc",
+				"type": "String"
+			},
+			{
+				"name": "Drum",
+				"type": "String"
+			},
+			{
+				"name": "Tubeless Tyres",
+				"type": "String"
+			},
+			{
+				"name": "5.0",
+				"type": "String"
+			},
+			{
+				"name": "180",
+				"type": "String"
+			},
+			{
+				"name": "uttar pradesh",
+				"type": "String"
+			},
+			{
+				"name": "Silver47",
+				"type": "String"
+			},
+			{
+				"name": "first",
+				"type": "String"
+			},
+			{
+				"name": "Prop_49",
+				"type": "String"
+			},
+			{
+				"name": "58",
+				"type": "String"
+			},
+			{
+				"name": "77",
+				"type": "String"
+			},
+			{
+				"name": "9",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,24 @@
+{
+	"name": "cardekho_list_ds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "cardekho_partition_ls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "data/cars_details_repartition.csv",
+				"fileSystem": "cardekho-raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

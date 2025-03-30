@@ -1,0 +1,585 @@
+{
+	"name": "cardekho_sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "cardekho_adls_sink",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "cardekho_bronze_layer",
+				"fileSystem": "cardekho-raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "position",
+				"type": "String"
+			},
+			{
+				"name": "loc",
+				"type": "String"
+			},
+			{
+				"name": "myear",
+				"type": "String"
+			},
+			{
+				"name": "bt",
+				"type": "String"
+			},
+			{
+				"name": "tt",
+				"type": "String"
+			},
+			{
+				"name": "ft",
+				"type": "String"
+			},
+			{
+				"name": "km",
+				"type": "String"
+			},
+			{
+				"name": "ip",
+				"type": "String"
+			},
+			{
+				"name": "pi",
+				"type": "String"
+			},
+			{
+				"name": "images",
+				"type": "String"
+			},
+			{
+				"name": "imgCount",
+				"type": "String"
+			},
+			{
+				"name": "threesixty",
+				"type": "String"
+			},
+			{
+				"name": "dvn",
+				"type": "String"
+			},
+			{
+				"name": "oem",
+				"type": "String"
+			},
+			{
+				"name": "model",
+				"type": "String"
+			},
+			{
+				"name": "modelId",
+				"type": "String"
+			},
+			{
+				"name": "vid",
+				"type": "String"
+			},
+			{
+				"name": "centralVariantId",
+				"type": "String"
+			},
+			{
+				"name": "variantName",
+				"type": "String"
+			},
+			{
+				"name": "city_x",
+				"type": "String"
+			},
+			{
+				"name": "vlink",
+				"type": "String"
+			},
+			{
+				"name": "price",
+				"type": "String"
+			},
+			{
+				"name": "pu",
+				"type": "String"
+			},
+			{
+				"name": "discountValue",
+				"type": "String"
+			},
+			{
+				"name": "msp",
+				"type": "String"
+			},
+			{
+				"name": "priceSaving",
+				"type": "String"
+			},
+			{
+				"name": "pageNo",
+				"type": "String"
+			},
+			{
+				"name": "utype",
+				"type": "String"
+			},
+			{
+				"name": "views",
+				"type": "String"
+			},
+			{
+				"name": "usedCarId",
+				"type": "String"
+			},
+			{
+				"name": "usedCarSkuId",
+				"type": "String"
+			},
+			{
+				"name": "ucid",
+				"type": "String"
+			},
+			{
+				"name": "sid",
+				"type": "String"
+			},
+			{
+				"name": "tmGaadiStore",
+				"type": "String"
+			},
+			{
+				"name": "emiwidget",
+				"type": "String"
+			},
+			{
+				"name": "transmissionType",
+				"type": "String"
+			},
+			{
+				"name": "dynx_itemid_x",
+				"type": "String"
+			},
+			{
+				"name": "dynx_itemid2_x",
+				"type": "String"
+			},
+			{
+				"name": "dynx_totalvalue_x",
+				"type": "String"
+			},
+			{
+				"name": "leadForm",
+				"type": "String"
+			},
+			{
+				"name": "leadFormCta",
+				"type": "String"
+			},
+			{
+				"name": "offers",
+				"type": "String"
+			},
+			{
+				"name": "compare",
+				"type": "String"
+			},
+			{
+				"name": "brandingIcon",
+				"type": "String"
+			},
+			{
+				"name": "pageType",
+				"type": "String"
+			},
+			{
+				"name": "carType",
+				"type": "String"
+			},
+			{
+				"name": "corporateId",
+				"type": "String"
+			},
+			{
+				"name": "top_features",
+				"type": "String"
+			},
+			{
+				"name": "comfort_features",
+				"type": "String"
+			},
+			{
+				"name": "interior_features",
+				"type": "String"
+			},
+			{
+				"name": "exterior_features",
+				"type": "String"
+			},
+			{
+				"name": "safety_features",
+				"type": "String"
+			},
+			{
+				"name": "Color",
+				"type": "String"
+			},
+			{
+				"name": "Engine Type",
+				"type": "String"
+			},
+			{
+				"name": "Displacement",
+				"type": "String"
+			},
+			{
+				"name": "Max Power",
+				"type": "String"
+			},
+			{
+				"name": "Max Torque",
+				"type": "String"
+			},
+			{
+				"name": "No of Cylinder",
+				"type": "String"
+			},
+			{
+				"name": "Values per Cylinder",
+				"type": "String"
+			},
+			{
+				"name": "Value Configuration",
+				"type": "String"
+			},
+			{
+				"name": "BoreX Stroke",
+				"type": "String"
+			},
+			{
+				"name": "Turbo Charger",
+				"type": "String"
+			},
+			{
+				"name": "Super Charger",
+				"type": "String"
+			},
+			{
+				"name": "Length",
+				"type": "String"
+			},
+			{
+				"name": "Width",
+				"type": "String"
+			},
+			{
+				"name": "Height",
+				"type": "String"
+			},
+			{
+				"name": "Wheel Base",
+				"type": "String"
+			},
+			{
+				"name": "Front Tread",
+				"type": "String"
+			},
+			{
+				"name": "Rear Tread",
+				"type": "String"
+			},
+			{
+				"name": "Kerb Weight",
+				"type": "String"
+			},
+			{
+				"name": "Gross Weight",
+				"type": "String"
+			},
+			{
+				"name": "Gear Box",
+				"type": "String"
+			},
+			{
+				"name": "Drive Type",
+				"type": "String"
+			},
+			{
+				"name": "Seating Capacity",
+				"type": "String"
+			},
+			{
+				"name": "Steering Type",
+				"type": "String"
+			},
+			{
+				"name": "Turning Radius",
+				"type": "String"
+			},
+			{
+				"name": "Front Brake Type",
+				"type": "String"
+			},
+			{
+				"name": "Rear Brake Type",
+				"type": "String"
+			},
+			{
+				"name": "Top Speed",
+				"type": "String"
+			},
+			{
+				"name": "Acceleration",
+				"type": "String"
+			},
+			{
+				"name": "Tyre Type",
+				"type": "String"
+			},
+			{
+				"name": "No Door Numbers",
+				"type": "String"
+			},
+			{
+				"name": "Cargo Volumn",
+				"type": "String"
+			},
+			{
+				"name": "model_type_new",
+				"type": "String"
+			},
+			{
+				"name": "originalLocation",
+				"type": "String"
+			},
+			{
+				"name": "page_title",
+				"type": "String"
+			},
+			{
+				"name": "compare_car_details",
+				"type": "String"
+			},
+			{
+				"name": "seller_type_new",
+				"type": "String"
+			},
+			{
+				"name": "seating_capacity_new",
+				"type": "String"
+			},
+			{
+				"name": "transmission_type",
+				"type": "String"
+			},
+			{
+				"name": "model_year_new",
+				"type": "String"
+			},
+			{
+				"name": "car_type_new",
+				"type": "String"
+			},
+			{
+				"name": "model_name",
+				"type": "String"
+			},
+			{
+				"name": "model_id_new",
+				"type": "String"
+			},
+			{
+				"name": "oem_name",
+				"type": "String"
+			},
+			{
+				"name": "price_range_segment",
+				"type": "String"
+			},
+			{
+				"name": "dealer_id_new",
+				"type": "String"
+			},
+			{
+				"name": "state",
+				"type": "String"
+			},
+			{
+				"name": "city_id_new",
+				"type": "String"
+			},
+			{
+				"name": "fuel_type",
+				"type": "String"
+			},
+			{
+				"name": "max_engine_capacity_new",
+				"type": "String"
+			},
+			{
+				"name": "transmission_type_new",
+				"type": "String"
+			},
+			{
+				"name": "km_driven",
+				"type": "String"
+			},
+			{
+				"name": "model_new",
+				"type": "String"
+			},
+			{
+				"name": "vehicle_type_new",
+				"type": "String"
+			},
+			{
+				"name": "brand_name",
+				"type": "String"
+			},
+			{
+				"name": "engine_cc",
+				"type": "String"
+			},
+			{
+				"name": "fuel_type_new",
+				"type": "String"
+			},
+			{
+				"name": "car_segment",
+				"type": "String"
+			},
+			{
+				"name": "used_carid",
+				"type": "String"
+			},
+			{
+				"name": "city_name_new",
+				"type": "String"
+			},
+			{
+				"name": "page_type",
+				"type": "String"
+			},
+			{
+				"name": "city_y",
+				"type": "String"
+			},
+			{
+				"name": "engine_capacity_new",
+				"type": "String"
+			},
+			{
+				"name": "body_type_new",
+				"type": "String"
+			},
+			{
+				"name": "owner_type_new",
+				"type": "String"
+			},
+			{
+				"name": "mileage_new",
+				"type": "String"
+			},
+			{
+				"name": "dealer_id",
+				"type": "String"
+			},
+			{
+				"name": "model_year",
+				"type": "String"
+			},
+			{
+				"name": "variant_name",
+				"type": "String"
+			},
+			{
+				"name": "price_segment",
+				"type": "String"
+			},
+			{
+				"name": "dynx_event",
+				"type": "String"
+			},
+			{
+				"name": "dynx_pagetype",
+				"type": "String"
+			},
+			{
+				"name": "dynx_itemid_y",
+				"type": "String"
+			},
+			{
+				"name": "dynx_itemid2_y",
+				"type": "String"
+			},
+			{
+				"name": "dynx_totalvalue_y",
+				"type": "String"
+			},
+			{
+				"name": "brand_new",
+				"type": "String"
+			},
+			{
+				"name": "variant_new",
+				"type": "String"
+			},
+			{
+				"name": "exterior_color",
+				"type": "String"
+			},
+			{
+				"name": "min_engine_capacity_new",
+				"type": "String"
+			},
+			{
+				"name": "owner_type",
+				"type": "String"
+			},
+			{
+				"name": "price_segment_new",
+				"type": "String"
+			},
+			{
+				"name": "template_name_new",
+				"type": "String"
+			},
+			{
+				"name": "page_template",
+				"type": "String"
+			},
+			{
+				"name": "template_Type_new",
+				"type": "String"
+			},
+			{
+				"name": "experiment",
+				"type": "String"
+			},
+			{
+				"name": "Fuel Suppy System",
+				"type": "String"
+			},
+			{
+				"name": "Compression Ratio",
+				"type": "String"
+			},
+			{
+				"name": "Alloy Wheel Size",
+				"type": "String"
+			},
+			{
+				"name": "Ground Clearance Unladen",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

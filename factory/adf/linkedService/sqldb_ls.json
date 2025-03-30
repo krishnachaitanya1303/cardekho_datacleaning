@@ -1,0 +1,25 @@
+{
+	"name": "sqldb_ls",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "cardekho-server.database.windows.net",
+			"database": "cardekho-db",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "krishna1303",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault_cardekho",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "cardekhosql-password",
+				"secretVersion": "8a4b2eb17c8c408f87304cef491555cd"
+			}
+		}
+	}
+}
